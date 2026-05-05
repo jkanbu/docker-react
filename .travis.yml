@@ -1,10 +1,9 @@
 sudo: required
 services:
-  -docker
+  - docker
 
-befor_install:
-  - docker build -t jkanbu/docker-react -f dockerfile.dev .
+before_install:
+  - docker build -t jkanbu/docker-react -f Dockerfile.dev .
 
 script:
   - docker run jkanbu/docker-react npm run test -- --coverage
-     
