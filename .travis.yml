@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t jkanbu/docker-react -f Dockerfile.dev .
+  - docker build -t empulseglobal/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run jkanbu/docker-react npm run test -- --coverage
+  - docker run empulseglobal/docker-react npm run test -- --coverages
