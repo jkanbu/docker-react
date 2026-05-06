@@ -6,4 +6,4 @@ before_install:
   - docker build -t empulseglobal/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run empulseglobal/docker-react npm run test -- --coverages
+  - docker run empulseglobal/docker-react npm run test -- --coverage
